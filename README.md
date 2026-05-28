@@ -5,9 +5,8 @@ This project demonstrates the deployment of a Security Information and Event Man
 
 ## Lab Environment
 
-- Kali Linux (Wazuh Manager & Dashboard)
+- Ubuntu 22.04.5 (Wazuh Manager & Dashboard)
 - Windows 10 (Wazuh Agent)
-- Metasploitable2 (Wazuh Agent)
 - VirtualBox Internal Network
 
 ## Objectives
@@ -35,6 +34,8 @@ This project demonstrates the deployment of a Security Information and Event Man
 ## Tools Used
 
 - Wazuh
+- Ubutu
+- Debian
 - VirtualBox
 - Kali Linux
 - Windows 10
