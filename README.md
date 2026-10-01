@@ -21,13 +21,6 @@ All VMs use a dual-NIC layout to isolate management/logging traffic from the int
 - **Attack Simulation:** Using Kali Linux to run brute-force and network scans against targets to generate alerts.
 - **System Hardening:** Configuring firewalls and monitoring file integrity changes.
 
-## 🛠️ Skills Demonstrated
-
-- SIEM deployment and configuration
-- Endpoint log monitoring (Windows & Linux)
-- Security event analysis
-- Basic incident detection and investigation
-- Virtualized lab environment setup
 
 ## 📁 Repository Structure
 
