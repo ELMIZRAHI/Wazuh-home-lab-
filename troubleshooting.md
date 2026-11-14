@@ -34,7 +34,7 @@ The Debian agent registered with the Wazuh dashboard but remained stuck as `Neve
 6. **Result:** Netcat validation passed and the Debian agent status successfully flipped to `Active` on the dashboard.
 
 
-#Issue 2
+##Issue 2
 # Troubleshooting Log: Missing CIS SCA Policy on Debian 11 Wazuh Agent (v4.7.5)
 
 ## Problem Summary
