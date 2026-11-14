@@ -32,8 +32,9 @@ The Debian agent registered with the Wazuh dashboard but remained stuck as `Neve
    sudo systemctl restart wazuh-agent
    ```
 6. **Result:** Netcat validation passed and the Debian agent status successfully flipped to `Active` on the dashboard.
+ Troubleshooting Log: Missing CIS SCA Policy on Debian 11 Wazuh Agent (v4.7.5)
 
-#Issue 2  Troubleshooting Log: Missing CIS SCA Policy on Debian 11 Wazuh Agent (v4.7.5)
+# Troubleshooting Log: Missing CIS SCA Policy on Debian 11 Wazuh Agent (v4.7.5)
 
 ## Problem Summary
 The Debian 11 endpoint had no Security Configuration Assessment (SCA) policies loaded in `/var/ossec/ruleset/sca/`. Attempts to download the official `cis_debian11.yml` policy from GitHub using `curl` repeatedly failed with:
@@ -95,3 +96,4 @@ sudo grep -i "sca" /var/ossec/logs/ossec.log
 * Always match the CIS YAML ruleset branch/tag (e.g., `v4.7.5`) to the installed Wazuh agent version to avoid syntax mismatches.
 * Avoid using `curl -s` (silent mode) when troubleshooting downloads, as it hides useful error messages.
 * If a VM console mangles long pasted URLs, break the URL into smaller shell variables (`$H` and `$P`) before passing it to `curl`.
+
